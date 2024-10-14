@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Web Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            margin: 20px;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="/api/placeholder/150/150" alt="John Doe's profile picture" width="150" height="150">
+            <p>Hi, I'm John Doe, a passionate web developer with 5 years of experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <h3>E-commerce Platform</h3>
+                    <p>A fully functional e-commerce website built with React and Node.js.</p>
+                    <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+                </li>
+                <li>
+                    <h3>Weather App</h3>
+                    <p>A responsive weather application using OpenWeatherMap API.</p>
+                    <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+                </li>
+            </ol>
+            <figure>
+                <img src="/api/placeholder/300/200" alt="Screenshot of E-commerce Platform" width="300" height="200">
+                <figcaption>E-commerce Platform Homepage</figcaption>
+            </figure>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Advanced</td>
+                    <td>5 years</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Advanced</td>
+                    <td>5 years</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Intermediate</td>
+                    <td>2 years</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type=

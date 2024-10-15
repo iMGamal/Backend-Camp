@@ -1,0 +1,47 @@
+body {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #F3F5F2;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-family: Arial, sans-serif;
+}
+
+p {
+	font-size: 20px;
+	line-height: 2;
+}
+
+a {
+	text-decoration: none;
+	color: #3765b8;
+}
+
+a:hover {
+	color: #3214a7;
+}
+
+header, section, footer {
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+section {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+ul li {
+	margin-right: 25px;
+}
+
+ul li a:hover {
+	color: #FF7263;
+}

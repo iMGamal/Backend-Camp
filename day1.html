@@ -8,18 +8,18 @@
 		<h1>Mohamed Gamal</h1>
 		<nav>
 			<ul>
-				<li><a href="">About Me</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Skills</a></li>
-				<li><a href="">Vontact</a></li>
+				<li><a href="#section1">About Me</a></li>
+				<li><a href="#section2">Projects</a></li>
+				<li><a href="#section3">Skills</a></li>
+				<li><a href="#section4">Contact</a></li>
 			</ul>
 		</nav>
-		<section>
+		<section id="section1">
 			<h2>About Me</h2>
 			<p>I'm a 28-years old pharmacist aspiring to make a complete transition as a software engineer</p>
 			<img src="" alt="This is a photo of me">
 		</section>
-		<section>
+		<section id="section2">
 			<h2>Projects</h2>
 			<ol>
 				<li>
@@ -32,7 +32,7 @@
 				</li>
 			</ol>
 		</section>
-		<section>
+		<section id="section3">
 			<h2>Skills</h2>
 			<table>
 				<tr>
@@ -55,32 +55,28 @@
 					<td>Poor</td>
 					<td>1 week</td>
 				</tr>
+			</table>
 		</section>
-		<section>
+		<section id="section4">
 			<h2>Contact</h2>
 			<form>
 				<label>
 					Name:
 				</label>
-				<textarea>
-					<input type="text" name="name">
-				</textarea>
+				<input type="text" name="name">
 				</br>
 				<label>
 					E-Mail:
 				</label>
-				<textarea rows="3" cols="5">
-					<input type="e-mail" name="e-mail">
-				</textarea>
+				<input type="e-mail" name="e-mail">
 				<br>
 				<label>
 					Message:
 				</label>
-				<textarea rows="3" cols="5">
-					<input type="message" name="message">
+				<textarea id="message" name="message" rows="3" cols="5">
 				</textarea>
 				<br>
-				<input type="sumbit">
+				<input type="submit">
 			</form>
 		</section>
 		<section>

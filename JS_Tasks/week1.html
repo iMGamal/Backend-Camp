@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="keywords" content="Manage, add, view, update, delete, book, collection">
+		<title>Books Customizer</title>
+		<meta name="description" content="Manage a book collection where you can add, view, update or delete from your collection">
+		<meta name="author" content="Mohamed Gamal"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color: grey;
+				border: 5px solid yellow;
+				border-radius: 300px;
+			}
+			.p1 {
+				color: black;
+				text-align: center;
+			}
+			h1 {
+				color: black;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.form1 {
+				text-align: center;
+			}
+			input[type="text"] {
+				width: 400px;
+			}
+			input[type="submit"] {
+				background-color: green;
+				width: 70px;
+				color: white;
+			}
+		</style> </head>
+		<body>
+			<h1>Customize Your Books Collection:</h1>
+			<p class="p1">
+				<form class="form1">
+					<input type="text" name="BookTitle" placeholder="Book Title"><br>
+					<input type="text" name="AuthorName" placeholder="AuthorName"><br>
+					<input type="text" name="PublicationYear" placeholder="Publication Year"><br>
+					<input type="text" name="Genre" placeholder="Genre"><br>
+					<input type="submit" name="AddBook" value="Add Book">
+				</form>
+			</p>
+		<script>
+			class Book {
+							constructor(title, author, year, genre) {
+                					this.title = title;
+                					this.author = author;
+                					this.year = year;
+                					this.genre = genre;
+										}
+						}
+
+			class BookList {
+        						constructor() {
+                					this.list = [];
+										}
+
+							add(title, author, year, genre) {
+											let addbook = new Book(title, author, year, genre)
+											this.list.push(addbook);
+											return addbook;
+										}
+							display() {
+											return this.list;
+										}
+							update(title, changes) {
+											const updatebook = this.list.find(book => book.title === title);
+											if (updatebook) {
+															Object.assign(book, changes);
+															return book;
+														}
+										}
+							del(title) {
+											const index = this.list.findIndex(book => (title) => book.title === title);
+											if (index !== -1) {
+															return this.list.splice(index, 1)[0];
+														}
+											return null;
+										}
+						}
+		</script>
+	</body>
+</html>
